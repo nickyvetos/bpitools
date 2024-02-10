@@ -34,22 +34,30 @@ body{
 
 /* Navigation */
 
-#nav {
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    background-image: linear-gradient(#00000022, #00000000, #ffffff22);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
     text-decoration: none;
-    height: 32px;
-    display: flex;
-    justify-content: space-around;
 }
 
-div#nav {
+div.nav {
     margin: 8px;
     padding: 8px;
 }
 
-a#nav, a#nav:visited {
+a.nav, a.nav:visited {
     color: #11aaff;
 	margin: 0px;
 	padding: 0px;
@@ -59,8 +67,32 @@ a#nav, a#nav:visited {
     font-size: 150%;
 }
 
-a#nav:hover {
+a.nav:hover {
     color: #dadafa;
 	text-align: center;
-    font-size: 160%;
+}
+
+/* Content */
+
+#content {
+
+}
+
+#content-container {
+    background-color: #444444bb;
+    padding: 12px;
+    margin: 6px;
+}
+
+/* Footer */
+
+#social-bar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
 }
