@@ -1,3 +1,5 @@
+/* Broad */
+
 html, body {
 	max-height: 100%;
 	width: 100%;
@@ -11,221 +13,54 @@ body{
 	font-family: "Ubuntu Mono", monospace;
 	padding: 0px;
 	margin: 0px;
-	background-image: url("/img/prism.png");
-	background-color: #000;
+	background-image: url("img/prism.png");
 	text-shadow: 1px 1px #808080;
     background-size: 100% auto;
-    background-repeat: repeat;
     background-attachment: fixed;
     background-position: center;
 }
 
-div.body{
-	width: 100%;
-	min-width: 800px;
-	max-width: 100%;
-	height: auto;
-	padding: 0px;
-	margin: 0px;
+/* Title */
+
+#title {
+    font-size: 300%;
+    text-align: center;
+    padding: 8px;
 }
 
-h1{
+#banner {
+    background-color: #aaaaaa;
+}
+
+/* Navigation */
+
+#nav {
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
-    text-shadow: 2px 2px #808080;
+    text-decoration: none;
+    height: 32px;
+    display: flex;
+    justify-content: space-around;
 }
 
-img{
-	max-width: 100%;
-	max-height: auto;
-	padding: 0px;
-	margin: 0px;
-	border-style: none;
+div#nav {
+    margin: 8px;
+    padding: 8px;
 }
 
-.navbtn{
-	max-width: 25%;
-	max-height: auto;
-	padding: 0px;
-	margin: 0px;
-}
-
-.compan{
-	padding: 0px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-}
-
-#siteTitle{
-	background-color: #102028;
-	background-image: url("/img/titleBG.png");
-	background-size: 100% 100%;
-	color: #00a040;
-    text-shadow: 2px 2px #005020;
-	padding: 8px;
-	font-family: monospace;
-	font-size: 24pt;
-}
-
-#siteBanner{
-	background-image: url("/img/bannerBG.png");
-	width: 100%
-	max-width: 100%;
-	height: auto;
-	background-size: 100% auto;
-    background-repeat: no-repeat;
-	background-position: center; 
+a#nav, a#nav:visited {
+    color: #11aaff;
 	margin: 0px;
 	padding: 0px;
+	text-align: center;
+    text-shadow: 2px 2px #444444;
+    text-decoration: none;
+    font-size: 150%;
 }
 
-#menubar{
-	background-image: url("/img/cm.png");
-	padding: 2px;
-}
-
-img#bannerFace{
-	margin-left: 0px;
-	margin-right: auto;
-	max-width: 16%;
-	height: auto;
-}
-
-a{
-	text-decoration: none;
-	color: #F80000;
-    text-shadow: 2px 2px #800000;
-}
-
-a:visited{
-	text-decoration: none;
-	color: #008080;
-text-shadow: 2px 2px #004040;
-}
-
-a:hover{
-	text-decoration: none;
-	color: #00a040;
-text-shadow: 2px 2px #005020;
-}
-
-.content{
-	position: relative;
-	max-width: 800px;
-	
-	margin: auto;
-	background-image: url("/img/cm.png");
-	border-style: none;
-}
-
-#content{
-	position: relative;
-	max-width: 800px;
-	
-	margin: auto;
-	background-image: url("/img/cm.png");
-	border-style: none;
-}
-
-pre {
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-
-img.link{
-	width: 12px;
-	height: 12px;
-	background: url("/img/bgLinkTiny.png");
-	background-position: 0 0;
-}
-
-img.link:hover{
-	width: 12px;
-	height: 12px;
-	background: url("/img/bgLinkTiny.png");
-	background-position: 0 -12px;
-}
-
-img.sprite{
-	width: 107px;
-	height: 115px;
-	background: url("/img/icoBGSmall.png");
-	background-position: 0 0;
-}
-
-img.sprite:hover{
-	width: 107px;
-	height: 115px;
-	background: url("/img/icoBGSmall.png");
-	background-position: 0 -115px;
-}
-
-img.navLast{
-	width: 107px;
-	height: 115px;
-	background: url("/img/navLast.png");
-	background-position: 0 0;
-}
-
-img.navLast:hover{
-	width: 107px;
-	height: 115px;
-	background: url("/img/navLast.png");
-	background-position: 0 -115px;
-}
-
-img.navFirst{
-	width: 107px;
-	height: 115px;
-	background: url("/img/navFirst.png");
-	background-position: 0 0;
-}
-
-img.navFirst:hover{
-	width: 107px;
-	height: 115px;
-	background: url("/img/navFirst.png");
-	background-position: 0 -115px;
-}
-
-img.navReturn{
-	width: 107px;
-	height: 115px;
-	background: url("/img/navReturn.png");
-	background-position: 0 0;
-}
-
-img.navReturn:hover{
-	width: 107px;
-	height: 115px;
-	background: url("/img/navReturn.png");
-	background-position: 0 -115px;
-}
-
-img.game{
-	width: 169px;
-	height: 114px;
-	background: url("/img/icoBGLarge.png");
-	background-position: 0 0;
-}
-
-img.game:hover{
-	width: 169px;
-	height: 114px;
-	background: url("/img/icoBGLarge.png");
-	background-position: 0 -114px;
-}
-
-div.code{
-	background-image: url("/img/cm.png");
-	border:1px dashed #008080;
-	border-radius: 8px;
-	padding:4px;
-	display:block;
-	margin:0;
-	position: relative;
+a#nav:hover {
+    color: #dadafa;
+	text-align: center;
+    font-size: 160%;
 }
